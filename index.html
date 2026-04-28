@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artemisia - Nance</title>
+    <link rel="icon" href="https://i.postimg.cc/zXXhVbHv/11.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="index.html"> <img src="https://i.postimg.cc/hjBzgfqS/1.png" alt="Логотип" class="logo"> </a>
+        </div>
+    </header>
+
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    <div class="drawer" id="drawer">
+        <ul class="menu">
+            <li><a href="index.html">
+                    <img src="https://i.postimg.cc/6p8Gfk0N/home.png" alt="Главная">
+                    Главная
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="https://i.postimg.cc/Z5Y5rqkg/prem-art.png" alt="Художники">
+                    Prem Artist
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="https://i.postimg.cc/MGRMh1NP/man-14816778.png" alt="Художники">
+                    Художники
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="https://i.postimg.cc/t4xNXgTY/free-icon-pen-tablet-4861056.png" alt="Художники">
+                    Дизайнеры
+                </a>
+            </li>
+
+            
+    </div>
+
+    <div class="profile-card">
+        <div class="profile-header"
+            style="background: url('https://i.postimg.cc/8zGLmfKb/image.png') center/cover no-repeat">
+            <div class="header-overlay"></div>
+        </div>
+        <div class="profile-content">
+            <div class="avatar-container">
+                <div class="avatar-border"></div>
+                <img src="https://i.postimg.cc/RZHsMmkT/photo-5251455181835595579-y.jpg" alt="Аватар Nance"
+                    class="avatar">
+            </div>
+            <div class="profile-info">
+                <h1 class="profile-name">Nance</h1>
+                <a href="https://t.me/nance_art" class="profile-link">
+                    @nance_art
+                    <img src="https://i.postimg.cc/cJXCqTTc/icons8-48.png" alt="Telegram" class="profile-link-icon">
+                </a>
+                <p class="profile-bio">Стиль: Семириализм</p>
+
+                <div class="profile-badges">
+                    <span class="badge verified"><i class="fas fa-check-circle"></i> Няшка </span>
+                    <span class="badge experience"><i class="fas fa-hourglass-half"></i> 3 года опыта</span>
+                    <span class="badge pro"><i class="fas fa-star"></i> Prem Artist</span>
+                </div>
+
+                <div class="social-links">
+                    <a href=" https://vk.com/nensn5 " class="social-link" target="_blank" rel="noopener noreferrer"
+                        aria-label="ВКонтакте">
+                        <img src="https://i.postimg.cc/cHhQbQ8q/image.png" alt="VK" width="32" height="32"
+                            loading="lazy" class="social-icon">
+                    </a>
+
+                    <a href=" https://t.me/nensn5 " class="social-link" target="_blank" rel="noopener noreferrer"
+                        aria-label="Telegram">
+                        <img src="https://i.postimg.cc/cJXCqTTc/icons8-48.png" alt="Telegram" width="32" height="32"
+                            loading="lazy" class="social-icon">
+                    </a>
+
+                    <a href=" https://www.youtube.com/@nensn5 " class="social-link" target="_blank"
+                        rel="noopener noreferrer" aria-label="YouTube">
+                        <img src="https://i.postimg.cc/fW5tnzqN/youtube-1.png" alt="YouTube" width="32" height="32"
+                            loading="lazy" class="social-icon">
+                    </a>
+
+                    <a href="https://pin.it/2DbTWOypO" class="social-link" target="_blank" rel="noopener noreferrer"
+                        aria-label="YouTube">
+                        <img src="https://i.postimg.cc/T3B57t75/icons8-pinterest-48.png" alt="YouTube" width="32"
+                            height="32" loading="lazy" class="social-icon">
+                    </a>
+
+                    <a href="https://www.tiktok.com/@nensn5?_r=1&_d=eh83e1547be7il&sec_uid=MS4wLjABAAAALrSTNSIkiV3xErVnI8sQb01Iq5GX5Wgzt9JG01gcoeR26mXUpDDsdnpmqAcroE_f&share_author_id=7400529780627833861&sharer_language=ru&source=h5_m&u_code=efg187216geel8&ug_btm=b8727,b0&social_share_type=4&utm_source=copy&utm_medium=ios&utm_campaign=client_share&enable_checksum=1&user_id=7400529780627833861&share_link_id=E15C10FC-48FE-40F5-BA15-A724E6FDC3CC&share_app_id=1233"
+                        class="social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <img src="https://i.postimg.cc/sD6hSj5c/free-icon-video-13670382.png" alt="YouTube" width="32"
+                            height="32" loading="lazy" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="tabs-container">
+        <div class="tabs-header">
+            <button class="tab-btn active" onclick="openTab(event, 'tab1')">Работы</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab2')">Обо мне</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab3')">Услуги</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab4')">Отзывы</button>
+        </div>
+
+        <div id="tab1" class="tab-content active">
+            <div class="works-header">
+                <h3>
+                    <i class="fas fa-palette"></i> Мои работы
+                </h3>
+                <div class="archive-link">
+                    <a href="https://vk.com/nensn5" target="_blank" class="archive-btn">
+                        <div class="archive-icon">
+                            <img src="https://i.postimg.cc/cHhQbQ8q/image.png" alt="VK">
+                        </div>
+                        <div class="archive-text">
+                            <span class="archive-title">Архив всех работ</span>
+                            <span class="archive-subtitle">Полная коллекция в VK</span>
+                        </div>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="gallery-description">Здесь представлены мои последние работы. Кликните на изображение для
+                просмотра в полном размере.</p>
+
+            
+            <div class="hashtag-filter" id="hashtagFilter">
+                <button class="hashtag-filter-btn active" onclick="filterGallery('all')">Все работы</button>
+                
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                
+                <div class="gallery-item" data-tags="портрет др аниме арт"
+                    onclick="openModal('https://i.postimg.cc/qBmm1LLn/photo-5417891542582033554-y.jpg', '', this, true)">
+                    <img src="https://i.postimg.cc/qBmm1LLn/photo-5417891542582033554-y.jpg" alt="">
+                    <div class="hashtags-container">
+                        <span class="hashtag">#портрет</span>
+                        <span class="hashtag">#др</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-tags="персонаж концепт-арт арт"
+                    onclick="openModal('https://i.postimg.cc/CxDkqJJL/photo-5323357461266166793-y.jpg', '', this, true)">
+                    <img src="https://i.postimg.cc/CxDkqJJL/photo-5323357461266166793-y.jpg" aalt="">
+                    <div class="hashtags-container">
+                        <span class="hashtag">#персонаж</span>                                                
+                        <span class="hashtag">#концепт-арт</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-tags="портрет арт др"
+                    onclick="openModal('https://i.postimg.cc/9fhTtTNP/photo-5323357461266166794-y.jpg', '', this, true)">
+                    <img src="https://i.postimg.cc/9fhTtTNP/photo-5323357461266166794-y.jpg" alt="">
+                    <div class="hashtags-container">
+                        <span class="hashtag">#портрет</span>
+                        <span class="hashtag">#др</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-tags="др аниме"
+                    onclick="openModal('https://i.postimg.cc/MGT7LJ09/photo-5312031623916681975-w.jpg', '', this, true)">
+                    <img src="https://i.postimg.cc/MGT7LJ09/photo-5312031623916681975-w.jpg" alt="">
+                    <div class="hashtags-container">
+                        <span class="hashtag">#др</span>
+                        <span class="hashtag">#аниме</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-tags="персонаж концепт-арт др арт"
+                    onclick="openModal('https://i.postimg.cc/W4HGLYXT/photo-5312031623916681978-w.jpg', '', this, true)">
+                    <img src="https://i.postimg.cc/W4HGLYXT/photo-5312031623916681978-w.jpg" alt="">
+                    <div class="hashtags-container">
+                        <span class="hashtag">#персонаж</span>
+                        <span class="hashtag">#др</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-tags="иллюстрация др"
+                    onclick="openModal('https://i.postimg.cc/MHfrG8QS/image.png', '', this, true)">
+                    <img src="https://i.postimg.cc/MHfrG8QS/image.png" alt="">
+                    <div class="hashtags-container">
+                        <span class="hashtag">#иллюстрация</span>
+                        <span class="hashtag">#др</span>
+                        
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-tags="персонаж аниме девушка арт"
+                    onclick="openModal('https://i.postimg.cc/wM5kHSrr/image.png', '', this, true)">
+                    <img src="https://i.postimg.cc/wM5kHSrr/image.png" alt="">
+                    <div class="hashtags-container">
+                        <span class="hashtag">#персонаж</span>
+                        <span class="hashtag">#девушка</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-tags="портрет арт цифровая_живопись"
+                    onclick="openModal('https://i.postimg.cc/L4PCNWxL/Vfx-Kt-YPVQM.jpg', '', this, true)">
+                    <img src="https://i.postimg.cc/L4PCNWxL/Vfx-Kt-YPVQM.jpg" alt="">
+                    <div class="hashtags-container">
+                        <span class="hashtag">#портрет</span>
+                        <span class="hashtag">#арт</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-tags="фэнтези персонаж концепт-арт арт"
+                    onclick="openModal('https://i.postimg.cc/CLVvt42t/Ad-I8-TXcrs.jpg', '', this, true)">
+                    <img src="https://i.postimg.cc/CLVvt42t/Ad-I8-TXcrs.jpg" alt="">
+                    <div class="hashtags-container">
+                        <span class="hashtag">#фэнтези</span>
+                        <span class="hashtag">#персонаж</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-tags="аниме портрет девушка арт"
+                    onclick="openModal('https://i.postimg.cc/zGzxDG8F/photo-5424785192725377471-y-copy.jpg', '', this, true)">
+                    <img src="https://i.postimg.cc/zGzxDG8F/photo-5424785192725377471-y-copy.jpg" alt="">
+                    <div class="hashtags-container">
+                        <span class="hashtag">#портрет</span>
+                        <span class="hashtag">#девушка</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-tags="персонаж концепт-арт фэнтези арт"
+                    onclick="openModal('https://i.postimg.cc/pdyk8c99/photo-5424785192725377472-y.jpg', '', this, true)">
+                    <img src="https://i.postimg.cc/pdyk8c99/photo-5424785192725377472-y.jpg" alt="">
+                    <div class="hashtags-container">
+                        <span class="hashtag">#персонаж</span>
+                        <span class="hashtag">#концепт-арт</span>
+                       
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-tags="портрет арт цифровая_живопись"
+                    onclick="openModal('https://i.postimg.cc/P5S2Cnqs/photo-5424785192725377473-y.jpg', '', this, true)">
+                    <img src="https://i.postimg.cc/P5S2Cnqs/photo-5424785192725377473-y.jpg" alt="">
+                    <div class="hashtags-container">
+                        <span class="hashtag">#портрет</span>                       
+                        <span class="hashtag">#арт</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-tags="персонаж концепт-арт арт"
+                    onclick="openModal('https://i.postimg.cc/d0X69Rd5/photo-5424785192725377475-y.jpg', '', this, true)">
+                    <img src="https://i.postimg.cc/d0X69Rd5/photo-5424785192725377475-y.jpg" alt="">
+                    <div class="hashtags-container">
+                        <span class="hashtag">#персонаж</span>
+                        <span class="hashtag">#концепт-арт</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-tags="аниме портрет девушка арт"
+                    onclick="openModal('https://i.postimg.cc/nrf1yH37/photo-5424785192725377476-y.jpg', '', this, true)">
+                    <img src="https://i.postimg.cc/nrf1yH37/photo-5424785192725377476-y.jpg" alt="">
+                    <div class="hashtags-container">
+                        <span class="hashtag">#портрет</span>
+                        <span class="hashtag">#девушка</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-tags="персонаж др арт"
+                    onclick="openModal('https://i.postimg.cc/xdN8rrpy/IMG-9175.png', '', this, true)">
+                    <img src="https://i.postimg.cc/xdN8rrpy/IMG-9175.png" alt="">
+                    <div class="hashtags-container">
+                        <span class="hashtag">#персонаж</span>
+                        <span class="hashtag">#др</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-tags="персонаж аниме арт"
+                    onclick="openModal('https://i.postimg.cc/g2nkRFpF/IMG-9173.png', '', this, true)">
+                    <img src="https://i.postimg.cc/g2nkRFpF/IMG-9173.png" alt="">
+                    <div class="hashtags-container">
+                        <span class="hashtag">#персонаж</span>
+                        <span class="hashtag">#аниме</span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div id="tab2" class="tab-content">
+            <p><strong>🎨 Художник</strong><br>
+                Рисую в основном оригинальных персонажей и делаю гифты — как для друзей, так и для коллег. Иногда
+                балуюсь фан-артом по любимым вселенным, но душа лежит к собственным образам и историям.</p>
+
+            <p><strong>🖌 Графический дизайнер</strong><br>
+                Учусь на дизайнера, уже есть небольшой опыт в создании упаковки и стикеров — от концепта до печати.</p>
+
+            <p><strong>🎥 Видеомейкер</strong><br>
+                Снимаю развлекательные ролики на YouTube — где-то с юмором, где-то с атмосферой, но всегда с душой.</p>
+
+            <p><strong>📖 Планы</strong><br>
+                Мечтаю создать собственный комикс со своими персонажами. На данный момент имеются наработки, концепты и
+                небольшие комиксные зарисовки.</p>
+        </div>
+
+        <div id="tab3" class="tab-content">
+            <div class="anime-section">
+                <img src="https://i.postimg.cc/wvXy2xr7/photo-5237902700295879739-w.jpg" alt="Commission"
+                    onclick="openModal('https://i.postimg.cc/wvXy2xr7/photo-5237902700295879739-w.jpg', 'Commission', this, false)">
+                <div class="text">
+                    <h3>Commission</h3>
+                    <div class="description">
+                        Открыты комишн! Цены и условия представлены на изображении)
+                    </div>
+                    <div class="price">
+                        <span> Цена от </span> 600 ₽
+                    </div>
+                    <a href="https://t.me/enhchx" target="_blank" class="order-btn">
+                        <span>Заказать через Telegram</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="anime-section">
+                <img src="https://i.postimg.cc/tTQnFn2K/photo-5237902700295879740-w.jpg" alt="Commission"
+                    onclick="openModal('https://i.postimg.cc/tTQnFn2K/photo-5237902700295879740-w.jpg', 'Commission', this, false)">
+                <div class="text">
+                    <h3>Commission</h3>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="tab4" class="tab-content">
+            <h3>Отзывы</h3>
+            <p>Пока что их нет, но я их стараюсь собирать)</p>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div class="modal-backdrop" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <div id="modalNav" class="modal-nav" style="display: none;">
+                <button class="modal-nav-btn prev" onclick="navigateModal(-1)">❮</button>
+                <button class="modal-nav-btn next" onclick="navigateModal(1)">❯</button>
+            </div>
+            <div class="image-container">
+                <img id="modalImage" class="modal-image" src="" alt="">
+            </div>
+            <div id="modalCaption" class="modal-caption"></div>
+            <div id="modalHashtags" class="hashtags-container"></div>
+            <div id="modalIndicator" class="modal-indicator" style="display: none;"></div>
+        </div>
+    </div>
+
+    <footer class="footer-container">
+        <section class="footer-main-section">
+            <a href="index.html" class="footer-brand-link">
+                <img src="https://i.postimg.cc/hjBzgfqS/1.png" alt="Artemisia" class="footer-brand-logo">
+            </a>
+
+            <nav class="footer-navigation">
+                <a href="https://t.me/nensn5" class="footer-nav-item">Подробности </a>
+                <a href="https://t.me/nensn5" class="footer-nav-item">Заказать работу</a>
+                <a href="https://t.me/nensn5" class="footer-nav-item">Связяться </a>
+            </nav>
+        </section>
+
+        
+    </footer>
+
+    <div id="backToTopBtn" class="back-to-top-btn" onclick="scrollToTop()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+        </svg>
+    </div>
+
+    <script>
+        let currentGalleryItems = [];
+        let currentIndex = 0;
+        let isGalleryMode = false;
+        let touchStartX = 0;
+        let touchEndX = 0;
+        let allHashtags = [];
+        let activeFilter = 'all';
+
+        function toggleMenu() {
+            const drawer = document.getElementById('drawer');
+            const overlay = document.getElementById('overlay');
+            const menuIcon = document.getElementById('menuIcon');
+            const body = document.body;
+
+            if (!body.classList.contains('menu-open')) {
+                body.style.top = `-${window.scrollY}px`;
+            }
+
+            drawer.classList.toggle('open');
+            overlay.classList.toggle('active');
+            menuIcon.classList.toggle('active');
+            body.classList.toggle('menu-open');
+
+            if (!body.classList.contains('menu-open')) {
+                const scrollY = parseInt(body.style.top || '0');
+                body.style.top = '';
+                window.scrollTo(0, -scrollY);
+            }
+        }
+
+        function toggleSubmenu(event) {
+            event.preventDefault();
+            const submenu = event.currentTarget.nextElementSibling;
+            submenu.classList.toggle('active');
+            event.currentTarget.classList.toggle('active');
+        }
+
+        function removeHighlights() {
+            const highlights = document.querySelectorAll('.highlight');
+            highlights.forEach(highlight => {
+                const parent = highlight.parentNode;
+                parent.replaceChild(document.createTextNode(highlight.textContent), highlight);
+                parent.normalize();
+            });
+        }
+
+        function openTabByLink(tabId) {
+            const tab = document.getElementById(tabId);
+            if (tab) {
+                tab.style.display = 'block';
+            }
+        }
+
+        function openTab(evt, tabName) {
+            const tabContents = document.getElementsByClassName('tab-content');
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove('active');
+            }
+
+            const tabButtons = document.getElementsByClassName('tab-btn');
+            for (let i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove('active');
+            }
+
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+
+        function collectAllHashtags() {
+            const items = document.querySelectorAll('.gallery-item');
+            const hashtagMap = {};
+
+            items.forEach(item => {
+                const tags = item.getAttribute('data-tags').split(' ');
+                const hashtags = item.querySelectorAll('.hashtag');
+
+                tags.forEach(tag => {
+                    if (!hashtagMap[tag]) {
+                        hashtagMap[tag] = 0;
+                    }
+                    hashtagMap[tag]++;
+                });
+
+                hashtags.forEach(hashtag => {
+                    hashtag.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                        const tag = this.textContent.substring(1); 
+                        filterGallery(tag);
+                    });
+                });
+            });
+
+            allHashtags = Object.entries(hashtagMap)
+                .sort((a, b) => b[1] - a[1])
+                .map(([tag, count]) => ({ tag, count }));
+
+            createHashtagFilters();
+        }
+
+        function createHashtagFilters() {
+            const filterContainer = document.getElementById('hashtagFilter');
+
+            const topHashtags = allHashtags.slice(0, 10);
+
+            topHashtags.forEach(({ tag, count }) => {
+                const btn = document.createElement('button');
+                btn.className = 'hashtag-filter-btn';
+                btn.innerHTML = `#${tag} <span class="hashtag-count">${count}</span>`;
+                btn.onclick = (e) => {
+                    e.stopPropagation();
+                    filterGallery(tag);
+                };
+                filterContainer.appendChild(btn);
+            });
+        }
+
+        function filterGallery(tag) {
+            activeFilter = tag;
+            const items = document.querySelectorAll('.gallery-item');
+            const filterButtons = document.querySelectorAll('.hashtag-filter-btn');
+
+            filterButtons.forEach(btn => {
+                if (btn.textContent.includes(`#${tag}`) || (tag === 'all' && btn.textContent.includes('Все работы'))) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+
+            items.forEach(item => {
+                if (tag === 'all' || item.getAttribute('data-tags').includes(tag)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            if (isGalleryMode) {
+                const gallery = document.getElementById('galleryGrid');
+                currentGalleryItems = Array.from(gallery.querySelectorAll(`.gallery-item${tag === 'all' ? '' : `[data-tags*="${tag}"]`}`))
+                    .filter(item => window.getComputedStyle(item).display !== 'none');
+
+                updateIndicator();
+            }
+        }
+
+        function openModal(imageSrc, caption, clickedElement = null, galleryMode = false) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const captionText = document.getElementById('modalCaption');
+            const hashtagsContainer = document.getElementById('modalHashtags');
+            const indicator = document.getElementById('modalIndicator');
+            const nav = document.getElementById('modalNav');
+
+            isGalleryMode = galleryMode;
+
+            if (galleryMode && clickedElement) {
+                const gallery = document.getElementById('galleryGrid');
+                const visibleItems = Array.from(gallery.querySelectorAll(`.gallery-item${activeFilter === 'all' ? '' : `[data-tags*="${activeFilter}"]`}`));
+                currentGalleryItems = visibleItems.filter(item => window.getComputedStyle(item).display !== 'none');
+                currentIndex = currentGalleryItems.indexOf(clickedElement);
+
+                nav.style.display = 'flex';
+                updateIndicator();
+
+                const hashtagElements = clickedElement.querySelectorAll('.hashtag');
+                hashtagsContainer.innerHTML = '';
+                hashtagElements.forEach(hashtagEl => {
+                    const tag = hashtagEl.textContent.substring(1); 
+                    const span = document.createElement('span');
+                    span.className = 'hashtag';
+                    span.textContent = `#${tag}`;
+                    span.onclick = (e) => {
+                        e.stopPropagation();
+                        closeModal();
+                        filterGallery(tag);
+                    };
+                    hashtagsContainer.appendChild(span);
+                });
+                hashtagsContainer.style.display = 'flex';
+            } else {
+                currentGalleryItems = [];
+                currentIndex = 0;
+                nav.style.display = 'none';
+                indicator.style.display = 'none';
+                hashtagsContainer.style.display = 'none';
+            }
+
+            modal.style.display = "flex";
+            modalImg.src = imageSrc;
+            captionText.innerHTML = caption;
+            document.body.classList.add('no-scroll');
+
+            modalImg.classList.remove('visible');
+            setTimeout(() => {
+                modalImg.classList.add('visible');
+            }, 50);
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+            document.body.classList.remove('no-scroll');
+            currentGalleryItems = [];
+            currentIndex = 0;
+        }
+
+        function navigateModal(direction) {
+            if (!isGalleryMode || currentGalleryItems.length === 0) return;
+
+            currentIndex += direction;
+
+            if (currentIndex < 0) {
+                currentIndex = currentGalleryItems.length - 1;
+            } else if (currentIndex >= currentGalleryItems.length) {
+                currentIndex = 0;
+            }
+
+            const newItem = currentGalleryItems[currentIndex];
+            const newImgSrc = newItem.querySelector('img').src;
+            const modalImg = document.getElementById('modalImage');
+            const hashtagsContainer = document.getElementById('modalHashtags');
+
+            const hashtagElements = newItem.querySelectorAll('.hashtag');
+            hashtagsContainer.innerHTML = '';
+            hashtagElements.forEach(hashtagEl => {
+                const tag = hashtagEl.textContent.substring(1); 
+                const span = document.createElement('span');
+                span.className = 'hashtag';
+                span.textContent = `#${tag}`;
+                span.onclick = (e) => {
+                    e.stopPropagation();
+                    closeModal();
+                    filterGallery(tag);
+                };
+                hashtagsContainer.appendChild(span);
+            });
+
+            modalImg.classList.remove('visible');
+            setTimeout(() => {
+                modalImg.src = newImgSrc;
+                modalImg.classList.add('visible');
+                updateIndicator();
+            }, 300);
+        }
+
+        function updateIndicator() {
+            const indicator = document.getElementById('modalIndicator');
+            if (isGalleryMode && currentGalleryItems.length > 0) {
+                indicator.textContent = `${currentIndex + 1} / ${currentGalleryItems.length}`;
+                indicator.style.display = 'block';
+            } else {
+                indicator.style.display = 'none';
+            }
+        }
+
+        document.addEventListener('touchstart', function (e) {
+            if (document.getElementById('imageModal').style.display === 'flex' && isGalleryMode) {
+                touchStartX = e.changedTouches[0].screenX;
+            }
+        }, false);
+
+        document.addEventListener('touchend', function (e) {
+            if (document.getElementById('imageModal').style.display === 'flex' && isGalleryMode) {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            }
+        }, false);
+
+        function handleSwipe() {
+            const threshold = 50; 
+
+            if (touchEndX < touchStartX - threshold) {
+                navigateModal(1);
+            } else if (touchEndX > touchStartX + threshold) {
+                navigateModal(-1);
+            }
+        }
+
+        document.getElementById('imageModal').addEventListener('click', function (event) {
+            if (!event.target.closest('.image-container') && !event.target.closest('.modal-nav-btn') && !event.target.closest('.hashtag')) {
+                closeModal();
+            }
+        });
+
+        document.onkeydown = function (evt) {
+            evt = evt || window.event;
+            if (evt.key === "Escape") {
+                closeModal();
+            } else if (isGalleryMode) {
+                if (evt.key === "ArrowLeft") {
+                    navigateModal(-1);
+                } else if (evt.key === "ArrowRight") {
+                    navigateModal(1);
+                }
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('.tab-btn').click();
+            collectAllHashtags(); 
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const showMoreBtn = document.getElementById('showMoreBtn');
+            const additionalReviews = document.getElementById('additionalReviews');
+
+            if (showMoreBtn && additionalReviews) {
+                showMoreBtn.addEventListener('click', function () {
+                    additionalReviews.classList.toggle('expanded');
+                    this.classList.toggle('expanded');
+
+                    if (additionalReviews.classList.contains('expanded')) {
+                        this.innerHTML = '<i class="fas fa-chevron-up"></i> Свернуть отзывы';
+                    } else {
+                        this.innerHTML = '<i class="fas fa-chevron-down"></i> Ещё отзывы';
+                    }
+                });
+            }
+        });
+
+        function openOrderModal(title, artist, price, telegramLink) {
+            window.open(telegramLink, '_blank');
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        window.addEventListener('scroll', function () {
+            const backToTopBtn = document.getElementById('backToTopBtn');
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('active');
+            } else {
+                backToTopBtn.classList.remove('active');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+
+                        if (entry.target.classList.contains('modal-img')) {
+                            setTimeout(() => {
+                                entry.target.classList.add('visible');
+                            }, 100 * index);
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.profile-card, .tabs-container, .gallery-item, .archive-btn, .anime-section').forEach(el => {
+                observer.observe(el);
+            });
+
+            document.querySelectorAll('.modal-image').forEach((img, index) => {
+                img.classList.add('modal-img');
+                observer.observe(img);
+            });
+        });
+    </script>
+</body>
+
+</html>
